@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3 class="song-artist">Diljit Dosanjh</h3><span> - </span><span class="song-title">Lover</span>
+        </div>
+        <audio controls src="./assets/Lover.mp3" id="song"></audio>
+        <div class="box">
+            <button onclick="playPause()" id="play-pause">Play/Pause</button>
+            <button onclick="nextSong()" id="next-song">next</button>
+            <button onclick="previousSong()" id="previous-song">Previous</button>
+        </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
